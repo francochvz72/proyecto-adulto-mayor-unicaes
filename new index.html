@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa de Acompañamiento Adulto Mayor | UNICAES</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- CABECERA INSTITUCIONAL -->
+    <header class="main-header">
+        <div class="header-overlay">
+            <span class="badge-tag">Ética Social • II Periodo 2026</span>
+            <h1>Programa de Acompañamiento Integral y Bienestar para el Adulto Mayor</h1>
+            <p class="subtitle">Universidad Católica de El Salvador | Facultad de Ciencias y Humanidades</p>
+            <div class="meta-info">
+                <span><strong>Docente:</strong> Licda. Lenni Lorena Lemus Aguilar</span> | 
+                <span><strong>Lugar:</strong> Hogar San Vicente de Paul</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- NAV RÁPIDO -->
+        <nav class="nav-bar">
+            <a href="#diagnostico">1. Diagnóstico (VER)</a>
+            <a href="#blog">2. Blog DSI (JUZGAR)</a>
+            <a href="#simulador">3. Plan de Jornada</a>
+            <a href="#audiovisual">4. Multimedia (ACTUAR)</a>
+            <a href="#equipo">5. Equipo</a>
+        </nav>
+
+        <!-- SECCIÓN 1: DIAGNÓSTICO -->
+        <section id="diagnostico" class="card">
+            <h2>1. Diagnóstico de la Realidad (VER)</h2>
+            <div class="grid-2col">
+                <div>
+                    <h3>Problema Principal</h3>
+                    <p>Aislamiento social, soledad y disminución del bienestar integral en personas adultas mayores en situación de vulnerabilidad del Hogar de Pobres San Vicente de Paul.</p>
+                </div>
+                <div>
+                    <h3>Áreas de Intervención Integral</h3>
+                    <ul class="pills-list">
+                        <li><span class="pill social">Social</span> Convivencia y redes de apoyo</li>
+                        <li><span class="pill cognitiva">Cognitiva</span> Estimulación y alfabetización digital</li>
+                        <li><span class="pill emocional">Emocional</span> Escucha activa y afecto</li>
+                        <li><span class="pill corporal">Corporal</span> Gimnasia suave adaptada</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: BLOG DSI -->
+        <section id="blog" class="card">
+            <h2>2. Blog de Reflexión DSI (JUZGAR)</h2>
+            <article class="blog-box">
+                <span class="blog-date">Publicado: Octubre 2026</span>
+                <h3>Dignidad Humana y Fraternidad en la Tercera Edad</h3>
+                <p class="blog-excerpt">
+                    "Durante nuestra intervención en el Hogar San Vicente de Paul, fuimos testigos de la profunda necesidad de escucha y acompañamiento de nuestros adultos mayores. A la luz de los principios de la Doctrina Social de la Iglesia (DSI), especialmente el principio de la <strong>Dignidad de la Persona Humana</strong> y la <strong>Solidaridad</strong>, comprendemos que la ancianidad no es un periodo de descarte, sino una etapa sagrada que exige el reconocimiento de la comunidad..."
+                </p>
+                <p><em>(Aquí se coloca el testimonio completo del beneficiario en 3 párrafos).</em></p>
+            </article>
+        </section>
+
+        <!-- SECCIÓN 3: SIMULADOR DE JORNADA (LÓGICA POO) -->
+        <section id="simulador" class="card highlight-card">
+            <h2>3. Simulador de Jornada de Acompañamiento</h2>
+            <p>Selecciona y planifica las actividades diarias para los adultos mayores registrando los minutos de estimulación acumulados:</p>
+            
+            <div class="interactive-form">
+                <div class="form-group">
+                    <label for="selectActividad"><strong>Seleccionar Actividad del Catálogo:</strong></label>
+                    <select id="selectActividad" class="custom-select"></select>
+                </div>
+                <button id="btnAgregar" class="btn-primary">+ Agregar a la Jornada</button>
+            </div>
+
+            <div class="jornada-results">
+                <h3>Plan de Trabajo Seleccionado:</h3>
+                <ul id="listaJornada" class="styled-list">
+                    <!-- Se llena con script.js -->
+                </ul>
+                <div class="total-counter">
+                    <span>Tiempo total de estimulación acumulado:</span>
+                    <strong id="txtTiempoTotal">0</strong> <span>minutos</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: DESGLOSE AUDIOVISUAL Y MULTIMEDIA -->
+        <section id="audiovisual" class="card">
+            <h2>4. Recursos Digitales y Divulgación (ACTUAR)</h2>
+            <p>Productos audiovisuales y campaña digital desarrollados para visibilizar la problemática y las acciones del proyecto:</p>
+
+            <!-- PODCAST -->
+            <div class="media-block">
+                <h3>🎙️ Podcast Ético-Social (5-10 min)</h3>
+                <p><em>Episodio: "Ecos de Sabiduría: Acompañando a nuestros adultos mayores"</em></p>
+                <div class="audio-player-container">
+                    <!-- Reemplazar src por el archivo mp3 o link embebido de Spotify -->
+                    <audio controls class="full-audio">
+                        <source src="podcast-episodio1.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el reproductor de audio.
+                    </audio>
+                </div>
+            </div>
+
+            <!-- REELS / TIKTOKS -->
+            <div class="media-block">
+                <h3>🎬 Reels / TikToks Informativos (3 Videos)</h3>
+                <div class="grid-3col">
+                    <div class="video-card">
+                        <div class="video-placeholder">▶️ Video 1</div>
+                        <h4>1. Solidaridad Comunitaria</h4>
+                        <p>Acciones directas en el Hogar San Vicente de Paul.</p>
+                        <a href="#" target="_blank" class="btn-link">Ver en Reel / TikTok</a>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-placeholder">▶️ Video 2</div>
+                        <h4>2. Pensamiento Crítico</h4>
+                        <p>Análisis de causas del aislamiento en adultos mayores.</p>
+                        <a href="#" target="_blank" class="btn-link">Ver en Reel / TikTok</a>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-placeholder">▶️ Video 3</div>
+                        <h4>3. Lección Ético-Social</h4>
+                        <p>El aprendizaje principal del equipo en el proyecto.</p>
+                        <a href="#" target="_blank" class="btn-link">Ver en Reel / TikTok</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INSTAGRAM TEMÁTICO -->
+            <div class="media-block">
+                <h3>📸 Galería de Instagram (9 Posts)</h3>
+                <p>Campaña de concienciación en redes sociales con el hashtag <strong>#AdultoMayorDignoUNICAES</strong></p>
+                <div class="instagram-grid">
+                    <div class="insta-post">Post 1<br><small>Diagnóstico</small></div>
+                    <div class="insta-post">Post 2<br><small>Causas</small></div>
+                    <div class="insta-post">Post 3<br><small>Consecuencias</small></div>
+                    <div class="insta-post">Post 4<br><small>Área Social</small></div>
+                    <div class="insta-post">Post 5<br><small>Área Cognitiva</small></div>
+                    <div class="insta-post">Post 6<br><small>Área Emocional</small></div>
+                    <div class="insta-post">Post 7<br><small>Área Corporal</small></div>
+                    <div class="insta-post">Post 8<br><small>Testimonio</small></div>
+                    <div class="insta-post">Post 9<br><small>Agradecimientos</small></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5: EQUIPO DE TRABAJO -->
+        <section id="equipo" class="card">
+            <h2>5. Equipo Estudiantil de Trabajo</h2>
+            <div class="team-grid">
+                <span>Alvarez Vallecillos, Carlos Daniel</span>
+                <span>Amaya Valladares, Ester Abigail</span>
+                <span>Bonilla Rivera, Miguel Armando</span>
+                <span>Cruz De León, Daniela Gissell</span>
+                <span>Chávez Chávez, Giam Franco</span>
+                <span>Escobar Mendoza, Manfredy Antonio</span>
+                <span>Flores Colocho, Josue Fabricio</span>
+                <span>Jovel Ramírez, Daniel Alejandro</span>
+                <span>López Hernández, Jonathan Eduardo</span>
+                <span>Mojica Orellana, Douglas Alfredo</span>
+                <span>Rugamas Contreras, Heydi Liliana</span>
+                <span>Valencia Pleitez, Anthony Eduardo</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>Proyecto de Intervención Social — Asignatura de Ética Social</p>
+        <p>Universidad Católica de El Salvador (UNICAES) — 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
